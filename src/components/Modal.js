@@ -13,9 +13,9 @@ const Modal = () => {
         <>
             {isModalOpened &&
                 <div className="my-modal-view" >
-                    <div className="my-modal-window d-flex" >
-                        <AiFillCloseCircle style={{ fontSize: "25px" }} id="close-btn" onClick={() => dispatch(closeModal())} />
-                        <div className="d-flex">
+                    <div className="my-modal-window" >
+                        <AiFillCloseCircle id="close-btn" onClick={() => dispatch(closeModal())} />
+                        <div className="d-flex modal-body">
                             <div className="img-wrapper col-md-5">
                                 <img style={{ borderRadius: "10px 0px 0px 10px" }} src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${modalData.poster_path}`} className="img-fluid h-100 movie-img" alt='#' />
                             </div>
